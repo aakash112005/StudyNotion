@@ -14,6 +14,8 @@ A full-stack EdTech platform where students can explore, purchase, and learn cou
 
 [https://studynotion-vmff.onrender.com/](https://studynotion-vmff.onrender.com/)
 
+### figma 
+https://www.figma.com/design/Mikd0FjHKAofUlWQSi70nf/StudyNotion_shared?node-id=1-5&p=f&t=krE9Kq9L4D39LAlW-0
 ---
 
 # Features
