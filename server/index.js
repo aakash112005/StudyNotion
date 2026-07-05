@@ -30,7 +30,7 @@ app.use(cookieParser());
 //     })
 // )
 
-
+console.log("FRONTEND_URL ENV =", JSON.stringify(process.env.FRONTEND_URL));
 app.use(cors({
   //origin: "http://localhost:5173",
   origin: process.env.FRONTEND_URL, // 👈 frontend URL
