@@ -2,6 +2,9 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 const mailSender = async (email,title,body) =>{
+    console.log("HOST:", process.env.MAIL_HOST);
+    console.log("USER:", process.env.MAIL_USER);
+    console.log("PASS exists:", !!process.env.MAIL_PASS);
     try {
     let transporter = nodemailer.createTransport({
         host:process.env.MAIL_HOST,
