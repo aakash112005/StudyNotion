@@ -527,9 +527,10 @@ exports.getFullCourseDetails = async (req,res) => {
     try {
 
       console.log("req.body =", req.body);
-console.log("courseId =", courseId);
-console.log("typeof =", typeof courseId);
+
         const  {courseId}  = req.body;
+        console.log("courseId =", courseId);
+console.log("typeof =", typeof courseId);
        // console.log("course Id in backend",courseId)
         const userId = req.user.id;
         const courseDetails = await Course.findOne({
