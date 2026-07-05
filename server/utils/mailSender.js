@@ -62,7 +62,7 @@ const mailSender = async (email, title, body) => {
     });
 
     // Verify SMTP connection
-    await transporter.verify();
+   // await transporter.verify();
     console.log("SMTP Connected Successfully!");
 
     const info = await transporter.sendMail({
