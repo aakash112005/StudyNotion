@@ -6,15 +6,23 @@ const mailSender = async (email,title,body) =>{
     console.log("USER:", process.env.MAIL_USER);
     console.log("PASS exists:", !!process.env.MAIL_PASS);
     try {
-    let transporter = nodemailer.createTransport({
-        host:process.env.MAIL_HOST,
-         port: 587,                 // ✅ REQUIRED
-        secure: false,             // ✅ REQUIRED (true only for 465)
-        auth:{
-            user:process.env.MAIL_USER,
-            pass:process.env.MAIL_PASS,
-        }
-})
+//     let transporter = nodemailer.createTransport({
+//         host:process.env.MAIL_HOST,
+//          port: 587,                 // ✅ REQUIRED
+//         secure: false,             // ✅ REQUIRED (true only for 465)
+//         auth:{
+//             user:process.env.MAIL_USER,
+//             pass:process.env.MAIL_PASS,
+//         }
+// })
+
+        const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS,
+  },
+});
 
 // ✅ VERIFY TRANSPORTER
     await transporter.verify()
