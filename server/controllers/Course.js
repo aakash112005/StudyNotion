@@ -526,7 +526,7 @@ totalDurationInSecond += timeDurationInSecond
 exports.getFullCourseDetails = async (req,res) => {
     try {
 
-      console.log("req.body =", req.body);
+      console.log("req.body 456 =", req.body);
 
         const  {courseId}  = req.body;
         console.log("courseId =", courseId);
