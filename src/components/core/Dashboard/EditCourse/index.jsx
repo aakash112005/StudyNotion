@@ -20,7 +20,7 @@ export default function EditCourse() {
     ;(async () => {
       setLoading(true)
       console.log("course ID === ",courseId)
-      const result = await getFullDetailsOfCourse({ courseId: courseId }, token)
+      const result = await getFullDetailsOfCourse( courseId, token)
       if (result?.courseDetails) {
         dispatch(setEditCourse(true))
         dispatch(setCourse(result?.courseDetails))
