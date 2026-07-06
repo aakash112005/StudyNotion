@@ -169,7 +169,7 @@ function Footer() {
                             })
                         }
                       </div>
-                      <div className="text-center mt-8 lg:mt-0 ">Made with ❤️ Aakash Saini © 2025 Studynotion</div>
+                      <div className="text-center mt-8 lg:mt-0 ">Made with ❤️ Aakash Saini © 2026 Studynotion</div>
             </div>
             
         </div>
