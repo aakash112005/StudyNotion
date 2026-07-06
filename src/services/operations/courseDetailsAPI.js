@@ -352,7 +352,7 @@ console.log("typeof =", typeof courseId);
     const response = await apiConnector(
       "POST",
       GET_FULL_COURSE_DETAILS_AUTHENTICATED,
-      courseId,
+      {courseId},
       {
         Authorization: `Bearer ${token}`,
       }
